@@ -42,13 +42,24 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
    </div>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-    <DropdownMenuLabel>My Account</DropdownMenuLabel>
-    <DropdownMenuSeparator />
-    <DropdownMenuItem>Profile</DropdownMenuItem>
-    <DropdownMenuItem>Billing</DropdownMenuItem>
-    <DropdownMenuItem>Team</DropdownMenuItem>
-    <DropdownMenuItem>Subscription</DropdownMenuItem>
+      <DropdownMenuContent className= "text-gray-400 ">
+        <DropdownMenuLabel>
+        <div className="flex relative flex-center gap-3 py-2 px-2">
+    <Avatar className="h-8 w-8">
+      <AvatarImage src="https://avatars.githubusercontent.com/u/94678815?v=4" />
+        <AvatarFallback className= "bg-green-500  text-green-900 text-sm font-bold">
+    {user.name[0]}
+    </AvatarFallback>
+    </Avatar>
+    <div className="flex  flex-col">
+    <span className="test-base font-medium text-gray-400 ">{user.name}</span>
+    <span className="test-sm text-gray-500 ">{user.email}</span>
+   </div>
+
+
+        </div>
+        </DropdownMenuLabel>
+
   </DropdownMenuContent>
       
     </DropdownMenu>

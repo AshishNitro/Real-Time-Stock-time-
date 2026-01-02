@@ -25,7 +25,7 @@ const Home = () => {
           <TradingViewWidget
             title="Stock's HeatMap"
             scriptUrl={`${scriptUrl}stock-heatmap.js`}
-            config={TOP_STORIES_WIDGET_CONFIG}
+            config={HEATMAP_WIDGET_CONFIG}
             className="custom-chat"
             height={600}
           />

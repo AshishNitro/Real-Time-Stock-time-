@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </Link>
         <div className="pb-6 lg:pb-8">{children}</div>
       </section>
-      <section className="auth-right-section hidden lg:block">
+      <section className="auth-right-section">
         <div className="z-10 relative lg:mt-4 lg:mb-16">
           <blockquote className="auth-quote">
             The Nextjs app, which displays the current stock market prices in

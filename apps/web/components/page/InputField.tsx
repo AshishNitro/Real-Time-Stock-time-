@@ -32,6 +32,7 @@ const InputField = ({
         )}
         {...register(name, validation)}
       />
+      {error && <p className="text-sm text-color-500">{error.message}</p>}
     </div>
   );
 };

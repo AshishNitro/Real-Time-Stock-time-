@@ -4,7 +4,8 @@ import InputField from "../../../components/page/InputField";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import SelectField from "@/components/page/SelectField";
-import { INVESTMENT_GOALS } from "@/lib/Nav_constant";
+import { INVESTMENT_GOALS, PREFERRED_INDUSTRIES } from "@/lib/Nav_constant";
+import FooterLink from "@/components/page/FooterLink";
 
 const SignUpPage = () => {
   const {
@@ -76,6 +77,16 @@ const SignUpPage = () => {
           required
         />
 
+        <SelectField
+          name="preferredIndustry"
+          label="Preferred Industry"
+          placeholder="Select your preferred industry"
+          options={PREFERRED_INDUSTRIES}
+          control={control}
+          error={errors.preferredIndustry}
+          required
+        />
+
         <Button
           type="submit"
           disabled={isSubmitting}
@@ -85,6 +96,12 @@ const SignUpPage = () => {
             ? "Creating Account..."
             : "Start your Investment Journey"}
         </Button>
+
+        <FooterLink
+          text="Already have an account?"
+          linkText="Sign in"
+          href="/sign-in"
+        />
       </form>
     </>
   );

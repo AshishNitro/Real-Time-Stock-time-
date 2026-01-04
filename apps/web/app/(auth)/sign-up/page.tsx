@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import InputField from "../../../components/page/InputField";
+import InputField from "../../../components/forms/InputField";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import SelectField from "@/components/page/SelectField";
+import SelectField from "@/components/forms/SelectField";
 import { INVESTMENT_GOALS, PREFERRED_INDUSTRIES } from "@/lib/Nav_constant";
-import FooterLink from "@/components/page/FooterLink";
+import FooterLink from "@/components/forms/FooterLink";
 
 const SignUpPage = () => {
   const {

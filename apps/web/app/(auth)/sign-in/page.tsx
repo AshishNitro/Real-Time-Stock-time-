@@ -21,11 +21,11 @@ const SignIn = () => {
       <h1 className="form-title">SignIn Here</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <InputField
-          name="email" //rest 
+          name="email" //rest
           label="Email"
           placeholder="ashishnitro5@gmail.com"
           register={register}
-          error={errors.email}
+          error={errors.email}// hello one 
           validation={{ required: "Email is required", pattern: /^\S+@\S+$/i }}
         />
 
